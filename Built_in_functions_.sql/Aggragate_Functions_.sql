@@ -1,0 +1,45 @@
+CREATE TABLE E1
+(
+Emp_ID INT,
+Emp_Name VARCHAR(50),
+Gender VARCHAR(10),
+Department VARCHAR(30),
+City VARCHAR(30),
+Joining_date DATE,
+Salary BIGINT,
+Contact_No BIGINT,
+Status VARCHAR(20),
+Email_ID VARCHAR(100),
+);
+
+INSERT INTO E1 VALUES 
+(101,'ABHIJIT','M','IT','PUNE','2025-01-21',50000,9865987643,'ACTIVE','Abhi123@gmail.com'),
+(102,'ATHARAV','M','SALES','MUMBAI','2026-01-21',40000,9865987642,'ACTIVE','Atharav123@gmail.com'),
+(103,'SAKSHI','F','FINANCE','PANJAB','2024-06-21',60000,8865987643,'INACTIVE','Sakshi123@gmail.com'),
+(104,'AMEER','M','MARKETING','DELHI','2021-04-21',80000,8965987643,'ONLEAVE','Ameer123@gmail.com'),
+(105,'MEERA','F','PRODUCTION','MUMBAI','2026-07-21',90000,7265987643,'ACTIVE','Meera123@gmail.com'),
+(106,'RAHUL','M','FINANCE','SOLAPUR','2022-05-21',70000,6565987643,'ONLEAVE','Rahul123@gmail.com'),
+(107,'AKANKSHA','F','SALES','MUMBAI','2023-11-21',60000,7565987643,'ACTIVE','Akanksha123@gmail.com'),
+(108,'ROHIT','M','MARKETING','PUNE','2024-06-21',50000,7234987643,'INACTIVE','Rohit123@gmail.com'),
+(109,'DIVYA','F','FINANCE','AURANGABAD','2022-08-21',60000,9081987643,'ONLEAVE','Divya123@gmail.com'),
+(110,'SHANKAR','F','PRODUCTION','PANDHARPUR','2023-09-21',80000,8995987643,'INACTIVE','Shankar123@gmail.com');
+
+-------------------------AGGREGATE_FUNCTIONS-----------------------------
+
+--1 MAX------highest
+--2 MIN------lowest
+--3 AVG------average
+--4 SUM------total of 1 column
+--5 COUNT----give total count of 1 row
+
+SELECT * FROM E1;
+
+SELECT MAX(Salary) FROM E1;
+
+SELECT MIN(Salary) FROM E1;
+
+SELECT AVG(Salary) FROM E1;
+
+SELECT SUM(Salary) FROM E1;
+
+SELECT COUNT(Salary) FROM E1;
